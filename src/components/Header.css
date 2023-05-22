@@ -1,0 +1,187 @@
+    .header {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        height: 61px;
+        padding: 0;
+        z-index: 100;
+    }
+    
+    .docsLogo {
+        margin: -20px 0 0 -8px;
+        position: absolute;
+        float: left;
+    }
+    
+    #untitled {
+        font-size: 1.1em;
+        color: grey;
+        font-weight: 400;
+        margin-left: 60px;
+        margin-top: -6px;
+        position: absolute;
+        padding: 0 3px 0;
+    }
+    
+    #untitled:hover {
+        background-color: #eee;
+    }
+    
+    #mainMenu {
+        list-style: none;
+        margin-left: 20px;
+    }
+    
+    .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    .menu li:hover {
+        background-color: #eee;
+    }
+    
+    .menu li {
+        position: relative;
+        margin: 0px;
+        top: 22px;
+        font-size: 0.85em;
+        z-index: 2;
+        padding: 3px 5px;
+        border-radius: 0.15em;
+    }
+    
+    input[type=checkbox] {
+        display: none;
+    }
+    
+    .hamburger {
+        display: none;
+        font-size: 24px;
+    }
+    
+    @media screen and (max-width: 810px) {
+        .menu {
+            display: none;
+            position: absolute;
+            background-color: #eee;
+            right: 0;
+            left: 0px;
+            text-align: top;
+            padding: 0px 0;
+            top: 54px;
+        }
+        .menu li:hover {
+            display: inline-block;
+            background-color: #eee;
+        }
+        .menu li+li {
+            margin-top: 3px;
+        }
+        input[type=checkbox]:checked~.menu {
+            display: block;
+        }
+        .hamburger {
+            display: block;
+        }
+        #untitled {
+            margin-top: -12px;
+            margin-left: 40px;
+            font-size: 0.8em;
+        }
+    }
+    
+    .rightSide {
+        position: relative;
+        float: right;
+        margin: -50px 2% 3px 0;
+        font-size: 0.6em;
+    }
+    
+    #emailLogin {
+        color: grey;
+        padding: 0;
+        margin-left: -10px;
+        opacity: 0.8;
+        font-size: 15px;
+    }
+    
+    #emailLogin:hover {
+        color: black;
+        opacity: 0.8;
+    }
+    
+    #emailcaret {
+        position: relative;
+        float: right;
+        margin: -1px 0 0 3px;
+        padding: 0;
+        opacity: 0.7;
+    }
+    
+    #emailcaret:hover {
+        opacity: 1.0;
+    }
+    
+    .extraButtons {
+        position: absolute;
+        width: 160px;
+        left: -160px;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 4px 0 0 auto;
+    }
+    
+    .extraButtons li {
+        position: relative;
+        float: right;
+        display: inline;
+        padding: 7px;
+        background-color: white;
+        margin: 0 -55px 5px -50px;
+        color: black;
+        font-size: 1em;
+        font-weight: bold;
+        border: 1px solid #c9c9c9;
+        border-radius: 0.25em;
+        box-shadow: 0 0 1px #C7C7C7;
+        background-color: #F6F6F6;
+    }
+    
+    .extraButtons li:hover {
+        box-shadow: 0 0 1px #737373;
+    }
+    
+    .extraButtons li:nth-child(2) {
+        background-color: #377CEA;
+        right: -75px;
+        width: 50px;
+        color: white;
+    }
+    
+    .extraButtons li:nth-child(2):hover {
+        background-color: #4285F4;
+    }
+    
+    @media screen and (max-width: 810px) {
+        .rightSide {
+            size: relative;
+            margin-top: -57px;
+        }
+        .extraButtons {
+            height: 15%;
+            width: 125%;
+        }
+        .extraButtons li {
+            text: left;
+            top: 1px;
+            margin-right: -50px;
+        }
+        .extraButtons li:nth-child(2) {}
+        #emailLogin {
+            font-size: 1.2em;
+        }
+    }

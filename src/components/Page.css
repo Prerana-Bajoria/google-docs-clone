@@ -1,0 +1,50 @@
+.page {
+    position: absolute;
+    width: 820px;
+    height: 1200px;
+    top: 2px;
+    left: 49.5%;
+    margin: 120px 0 0px -410px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.paget {
+    background: transparent;
+    outline-width: 0;
+    width: 99%;
+    height: 98%;
+    padding-top: 20px;
+    padding-left: 5px;
+    resize: none;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1045px) {
+    .page {
+        top: 20px;
+        width: 650px;
+        height: 900px;
+        margin-left: -300px;
+        margin-right: 200px;
+    }
+    .paget {
+        width: 98.5%;
+        height: 97.5%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .page {
+        top: 32px;
+        width: 400px;
+        height: 700px;
+        margin-left: -180px;
+        margin-right: 200px;
+    }
+    .paget {
+        width: 98%;
+        height: 97%;
+    }
+}
